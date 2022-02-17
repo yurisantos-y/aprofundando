@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table> <!--Precisamos utilizar a tag table para criar uma tabela semanticamente-->
+        <thead> <!--thead para incluir conteudo na cabeça da tabela-->
+            <tr> <!--Define a linha da tabela-->
+                <th>Bloco 1</th> <!--Define uma célula para o cabeçalho de uma tabela-->
+                <th>Bloco 2</th>
+                <th>Bloco 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Conteudo 1</td>
+                <td>Conteudo 2</td>
+                <td>Conteudo 3</td>
+            </tr>
+
+            <tr>
+                <td  colspan="2">Conteudo 1</td> <!--O atributo colspan é utilizado para que uma célula ocupe duas células na tabela. Tmabém temos rowspan que faz com que a célula ocupe mais de uma célula na vertical--> 
+                <td>Conteudo 2</td>
+            </tr>
+
+            <tr>
+                <td>Conteudo 1</td>
+                <td>Conteudo 2</td>
+                <td>Conteudo 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+
+    </table>
+</body>
+</html>
